@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <header> Form- 1</header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="results.html" method="get" enctype="multipart/form-data">
+    <div>
+    <label for="name"> Name </label>
+    <input type="text" name="name" id="name" required >
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+  </div>
+  <div>
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min="1" max="200" step="1">
+  </div>
+  <div>
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date">
+  </div>
+  <div>
+    Favorite Food :
+    <div>
+      <label for="Apple">Apple</label>
+      <input type="checkbox" name="Apple" id="Apple">
+    </div>
+    <div></div>
+      <label for="custard apple">Custard Apple</label>
+      <input type="checkbox" name="custard pple" id="custard apple">
+    </div>
+  </div>
+  <div>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="gender">
+  </div>
+  <div>
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="gender">
+    <div>
+      <label for="eyecolor">Eye Color</label>
+      <select name="eyecolor" id="eyecolor">
+        <option value="Green">Green</option>
+        <option value="Brown">Brown</option>
+      </select>
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input type="tel" id="tel" maxlength="10" placeholder="123-456-7980"pattern="[0-9]{3}-[0-9]{3}[0-9]{4}">
+    </div>
+  </div> 
+    <label for="password"> Password </label>
+    <input type="password" name="password" required>
+    <div>
+      <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </div>
+  </form>
+</body>
+</html>
